@@ -7,6 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    const x: string = 123;
     return this.appService.getHello();
   }
 }
