@@ -32,3 +32,6 @@ jobs:
 
       - name: Build app
         run: npm run build
+
+      - name: Build Docker image
+        run: docker build -t orders-api .
