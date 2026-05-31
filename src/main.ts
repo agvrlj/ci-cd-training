@@ -5,6 +5,6 @@ import pinoHttp from 'pino-http';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(pinoHttp());
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT ?? 3000, '0.0.0.0');
 }
 bootstrap();
